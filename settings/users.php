@@ -109,7 +109,7 @@ if($isAdmin) {
 
 $disabledUsers = $isLDAPUsed ? 0 : $userManager->countDisabledUsers();
 $disabledUsersGroup = [
-	'id' => '_disabledUsers',
+	'id' => '_disabled',
 	'name' => 'Disabled users',
 	'usercount' => $disabledUsers
 ];
