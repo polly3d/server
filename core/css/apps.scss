@@ -152,7 +152,7 @@ kbd {
 				&,
 				> a {
 					opacity: 1;
-					box-shadow: inset 2px 0 $color-primary;
+					box-shadow: inset 5px 0 $color-primary;
 				}
 			}
 
@@ -195,6 +195,13 @@ kbd {
 						> a {
 							opacity: 1;
 						}
+					}
+
+					&.active {
+						box-shadow: inset 5px 0 $color-primary;
+						left: -44px;
+						padding-left: 44px;
+						width: calc(100% + 44px);
 					}
 
 					/* align loader */
