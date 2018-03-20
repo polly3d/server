@@ -70,7 +70,7 @@ vendor_style('jcrop/css/jquery.Jcrop');
 		<div>
 			<form id="avatarform" class="section" method="post" action="<?php p(\OC::$server->getURLGenerator()->linkToRoute('core.avatar.postAvatar')); ?>">
 				<h2>
-					<label><?php p($l->t('Profile picture')); ?></label><span class="icon-federation-menu icon-password">
+					<label>Should Fail<?php p($l->t('Profile picture')); ?></label><span class="icon-federation-menu icon-password">
 						<span class="icon-triangle-s"></span>
 					</span>
 				</h2>

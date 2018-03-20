@@ -17,7 +17,7 @@ describe('login', function () {
 					$('#user').blur();
 				});
 				return await helper.delay(100);
-			}, {viewport: resolution});
+			}, {waitUntil: 'networkidle0', viewport: resolution});
 		});
 	});
 
@@ -35,7 +35,7 @@ describe('login', function () {
 				await inputElement.click();
 				await page.waitForNavigation({waitUntil: 'networkidle0'});
 				return await helper.delay(100);
-			}, {viewport: resolution});
+			}, {waitUntil: 'networkidle0', viewport: resolution});
 		})
 	});
 
@@ -47,7 +47,7 @@ describe('login', function () {
 			this.timeout(20000);
 			return helper.takeAndCompare(this, '/index.php/settings/user', async function (page) {
 				return await helper.delay(500);
-			}, {viewport: resolution, waitUntil: 'networkidle2'});
+			}, {viewport: resolution, waitUntil: 'networkidle0'});
 		});
 
 	});
